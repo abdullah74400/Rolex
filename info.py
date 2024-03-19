@@ -15,16 +15,16 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '27498647'))
 API_HASH = environ.get('API_HASH', 'f7764b70861584bca951040781111bfb')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6443672455:AAGZTi5FqgMhBFB8CAbgDbruRtuT_vm4Jps")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6881513545:AAGV6VQf3Dj5EF0ja5hu8xZFTSMagXand7E")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/9345bf683e1bb1f0cf107.jpg https://telegra.ph/file/2371c5221fd50d35271c9.jpg https://telegra.ph/file/9304f4eba77dfcfc9474e.jpg https://telegra.ph/file/a0ba20139c81e0da92926.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0f2e4a6f6ea841a5392ca.jpg")
+PICS = (environ.get('PICS', 'https://telegra.ph/file/0359c2ec7411dfcd06991.jpg https://telegra.ph/file/7f2140db31b383483f2f3.jpg https://telegra.ph/file/a26d56baaefa40c528cb9.jpg https://telegra.ph/file/c57f63c0d6d67be99b2d4.jpg https://telegra.ph/file/57701bb888f211049f495.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/46443096bc6895c74a716.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/85d361ab4cb6511006022.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/cce660b3408f7cdeef1e3.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/0a3dd8abd3f74b7f7f365.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/0e2bc4c69e7a471e242b8.jpg'))
 CODE = (environ.get('CODE', 'https://t.me/ak_backup_72/1198'))
 
@@ -50,9 +50,9 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Storm72:khan7860@cluster0.udehz9j.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://ckhan:khan7860@cluster0.cloi5w7.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Storm72")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://IronMan72:khan7860@cluster0.q566bxw.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Iron:khan7860@cluster0.3cvc7jl.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "IronMan72")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
