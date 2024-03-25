@@ -33,7 +33,7 @@ Iᴅ = <code>{}</code>
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}
 
-Bʏ @ak_backup_72"""
+BʏIronMan @ak_backup_72"""
 
     LOG_TEXT_P = """#NewUser
     
