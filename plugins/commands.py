@@ -197,7 +197,7 @@ async def start(client, message):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
-                await client.send_cached_media(
+                msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
@@ -213,6 +213,8 @@ async def start(client, message):
                         ]
                     )
                 )
+                await asyncio.sleep(20)
+                await msg.delete()
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
@@ -397,6 +399,8 @@ async def start(client, message):
             ]
         )
     )
+        await asyncio.sleep(20)
+        await msg.delete()
             filesarr.append(msg)
         k = await client.send_sticker(sticker="0")
         await asyncio.sleep(600)
@@ -474,6 +478,8 @@ async def start(client, message):
             ]
         )
     )
+            await asyncio.sleep(20)
+            await msg.delete()
             filetype = msg.media
             file = getattr(msg, filetype.value)
             title = '' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
@@ -538,7 +544,7 @@ async def start(client, message):
         InlineKeyboardButton("❗ ɢᴇᴛ ꜰɪʟᴇ ᴀɢᴀɪɴ ❗", callback_data=f'delfile#{file_id}')
     ]]
     k = await msg.reply(sticker="0",quote=True)
-    await asyncio.sleep(600)
+    await asyncio.sleep(20)
     await msg.delete()
     await k.edit_text("<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
     return  
