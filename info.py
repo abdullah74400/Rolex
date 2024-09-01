@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://t.me/ak_backup_72/1198'))
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'zipshort.net'))
 STREAM_API = (environ.get('STREAM_API', '4623cd7019ade92446a852c0a5c453cd3e88053e'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/ak_backup_72/1195'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/ak_backup_72/6'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1807927334').split()]
@@ -51,7 +51,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://IronMan72:khan7860@cluster0.q566bxw.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Iron:khan7860@cluster0.3cvc7jl.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Tony:khan7860@cluster0.6wfpe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "IronMan72")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -66,7 +66,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ak_bot_support')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ak_backup_72')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/ak_backup_72/1195')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/ak_backup_72/6')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : Ak74400')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001933029304'))
