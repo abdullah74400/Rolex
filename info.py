@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://t.me/ydv2243'))
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'shortxlinks.com'))
 STREAM_API = (environ.get('STREAM_API', '8a845588bcc9ce0e202f90c9db9b7bedb58f9b6b'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/ydv2243'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/+WhaxS-m7U_o0ZTA1'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1722682835 1807927334').split()]
@@ -66,7 +66,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Search_movies_name')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ydv2243')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/ydv2243')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+WhaxS-m7U_o0ZTA1')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : Vivek_1020')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002113526895'))
